@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerrit's Cheat Sheet</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Gerrit's Cheat Sheet</h1>
+    </header>
+
+    <section
+      class="table-html-tags container"
+      aria-labelledby="html-tags-title"
+    >
+      <table>
+        <caption>
+          HTML Table Tags Overview
+        </caption>
+        <thead>
+          <tr>
+            <th>Tag/Selector/Property</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-code">&lt;table&gt;</td>
+            <td class="col-name">Table</td>
+            <td class="col-desc">
+              Defines a table, organizing data in rows and columns.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;tr&gt;</td>
+            <td class="col-name">Table Row</td>
+            <td class="col-desc">
+              Represents a row inside the table, containing cells.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;th&gt;</td>
+            <td class="col-name">Table Header Cell</td>
+            <td class="col-desc">
+              Defines a cell as a header in the table; usually bold and
+              centered.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;td&gt;</td>
+            <td class="col-name">Table Data Cell</td>
+            <td class="col-desc">
+              Represents a standard data cell in the table.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;caption&gt;</td>
+            <td class="col-name">Table Caption</td>
+            <td class="col-desc">
+              Provides a title or description for the whole table.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;thead&gt;</td>
+            <td class="col-name">Table Head</td>
+            <td class="col-desc">Groups the header content in the table.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;tbody&gt;</td>
+            <td class="col-name">Table Body</td>
+            <td class="col-desc">
+              Groups the body content in the table, separating it from the
+              header or footer.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;tfoot&gt;</td>
+            <td class="col-name">Table Footer</td>
+            <td class="col-desc">
+              Groups footer content in the table, often used for totals.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;col&gt;</td>
+            <td class="col-name">Table Column</td>
+            <td class="col-desc">
+              Specifies column properties that can be applied to multiple
+              columns.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;colgroup&gt;</td>
+            <td class="col-name">Column Group</td>
+            <td class="col-desc">
+              Groups together a set of columns, allowing collective formatting
+              or properties.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section
+      class="table-other-tags container"
+      aria-labelledby="other-tags-title"
+    >
+      <table>
+        <caption>
+          Other HTML Tags
+        </caption>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name/Selector</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-code">&lt;ul&gt;</td>
+            <td class="col-name">Unordered List</td>
+            <td class="col-desc">Creates a bulleted list.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;ol&gt;</td>
+            <td class="col-name">Ordered List</td>
+            <td class="col-desc">Creates a numbered list.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;li&gt;</td>
+            <td class="col-name">List Item</td>
+            <td class="col-desc">
+              Represents a list item in ordered or unordered lists.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;dl&gt;</td>
+            <td class="col-name">Description List</td>
+            <td class="col-desc">
+              Defines a list of terms and descriptions, also called definition
+              lists.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;dt&gt;</td>
+            <td class="col-name">Definition Term</td>
+            <td class="col-desc">Specifies a term in a description list.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;dd&gt;</td>
+            <td class="col-name">Description Details</td>
+            <td class="col-desc">
+              Provides the description for a term in a description list.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;blockquote&gt;</td>
+            <td class="col-name">Block Quote</td>
+            <td class="col-desc">Indicates quoted text from another source.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;code&gt;</td>
+            <td class="col-name">Code</td>
+            <td class="col-desc">Represents a fragment of computer code.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;em&gt;</td>
+            <td class="col-name">Emphasized Text</td>
+            <td class="col-desc">Makes text emphasized, typically italic.</td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;mark&gt;</td>
+            <td class="col-name">Marked/Highlighted Text</td>
+            <td class="col-desc">
+              Highlights part of the text in a paragraph (highlight effect).
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">&lt;main&gt;</td>
+            <td class="col-name">Main Content</td>
+            <td class="col-desc">
+              Defines the main content area unique to the document.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section
+      class="table-selectors container"
+      aria-labelledby="selectors-title"
+    >
+      <table>
+        <caption>
+          CSS Selectors and Specificity
+        </caption>
+        <thead>
+          <tr>
+            <th>Tag/Selector/Property</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-code">*</td>
+            <td class="col-name">Universal Selector</td>
+            <td class="col-desc">Selects all elements in the HTML document.</td>
+          </tr>
+          <tr>
+            <td class="col-code">element</td>
+            <td class="col-name">Type Selector</td>
+            <td class="col-desc">
+              Selects all elements of a specific type, e.g., <code>p</code> for
+              all paragraphs.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">.class</td>
+            <td class="col-name">Class Selector</td>
+            <td class="col-desc">
+              Selects elements with a specific class attribute.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-code">#id</td>
+            <td class="col-name">ID Selector</td>
+            <td class="col-desc">Selects a single element with a unique ID.</td>
+          </tr>
+          <tr>
+            <td class="col-code">[attr] / [attr=value]</td>
+            <td class="col-name">Attribute Selector</td>
+            <td class="col-desc">
+              Selects elements based on attribute presence/value (e.g.,
+              <code>[type="text"]</code>).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section
+      class="table-properties container"
+      aria-labelledby="properties-title"
+    >
+      <table>
+        <caption>
+          Common CSS Properties
+        </caption>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>color</td>
+            <td>Text Color</td>
+            <td>Sets the color of the text.</td>
+          </tr>
+          <tr>
+            <td>background</td>
+            <td>Background</td>
+            <td>Sets background color, image, position, etc.</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>Margin</td>
+            <td>Controls the space outside elements.</td>
+          </tr>
+          <tr>
+            <td>padding</td>
+            <td>Padding</td>
+            <td>Controls the space inside elements, around content.</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Border</td>
+            <td>Sets an element's border style, width, color, etc.</td>
+          </tr>
+          <tr>
+            <td>font-size</td>
+            <td>Font Size</td>
+            <td>Sets text size.</td>
+          </tr>
+          <tr>
+            <td>font-family</td>
+            <td>Font Family</td>
+            <td>Specifies typeface(s) for text.</td>
+          </tr>
+          <tr>
+            <td>font-weight</td>
+            <td>Font Weight</td>
+            <td>Sets boldness of the text.</td>
+          </tr>
+          <tr>
+            <td>text-align</td>
+            <td>Text Alignment</td>
+            <td>Aligns text: left, right, center, or justify.</td>
+          </tr>
+          <tr>
+            <td>line-height</td>
+            <td>Line Height</td>
+            <td>Sets vertical spacing between lines of text.</td>
+          </tr>
+          <tr>
+            <td>display</td>
+            <td>Display</td>
+            <td>Controls layout rendering (block, inline, flex, etc).</td>
+          </tr>
+          <tr>
+            <td>position</td>
+            <td>Position</td>
+            <td>Specifies positioning method (static, relative, etc).</td>
+          </tr>
+          <tr>
+            <td>width/height</td>
+            <td>Width/Height</td>
+            <td>Sets width and/or height of elements.</td>
+          </tr>
+          <tr>
+            <td>overflow</td>
+            <td>Overflow</td>
+            <td>Handles content overflow (visible, hidden, scroll).</td>
+          </tr>
+          <tr>
+            <td>list-style</td>
+            <td>List Style</td>
+            <td>Sets bullet/number type, marker image, position.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

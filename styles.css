@@ -1,0 +1,103 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #fffaf3;
+}
+
+.container {
+  max-width: 114rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Table Layout */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+caption {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 1.2rem;
+  border: 2px solid;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+}
+
+/* Column Width Classes */
+.col-code {
+  width: 12rem;
+}
+
+.col-name {
+  width: 12rem;
+}
+
+.col-desc {
+  width: 40rem;
+}
+
+/* Table Theme Variants */
+.table-html-tags th {
+  background-color: #e6c3a1;
+  border-color: #ffd9b3;
+}
+
+.table-html-tags td {
+  border-color: #ffd9b3;
+}
+
+.table-other-tags th {
+  background-color: #e6a4ae;
+  border-color: #ffb6c1;
+}
+
+.table-other-tags td {
+  border-color: #ffb6c1;
+}
+
+.table-selectors th {
+  background-color: #a1e6c3;
+  border-color: #b3ffd9;
+}
+
+.table-selectors td {
+  border-color: #b3ffd9;
+}
+
+.table-properties th {
+  background-color: #a1c3e6;
+  border-color: #b3d9ff;
+}
+
+.table-properties td {
+  border-color: #b3d9ff;
+}
